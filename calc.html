@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Simple Calculator</title>
+<style>
+body{
+    background: #53eef4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    
+    .container{
+     background: black;
+     width: 300px;
+     height: 420px;
+     margin: auto;
+     border: 1px solid #22f1ce;
+     border-radius: 20px;
+     padding: 10px;
+     box-shadow: 3px 3px 3px black;
+    }
+    
+    input[type=text]{
+      background-color: #fef8f8;
+      width: 95%;
+      padding: 5px;
+      border: 0.5px solid #ffffff;
+      height: 45px;
+      margin-top: 15px;
+      border-radius: 5px;
+      font-size: 22px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+    
+    input[type=button]{
+      background: rgb(249, 249, 247);
+      color: black;
+      width: 65px;
+      height: 50px;
+      margin: 3px;
+      border: 0.3px solid #ffffff;
+      font-size: 15px;
+      border-radius: 5px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    #del{
+    width: 48%;
+    border-radius: 5px;
+    }
+    
+    input:hover {
+    background-color: rgb(254, 254, 253);
+    color: black;
+    }
+    
+    h1{
+      text-align: center;
+      color: #000000;
+      text-shadow: 1px 1px 1px rgb(255, 255, 253);
+      font-size: 30px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+   </style>
+</head>
+
+<body>
+  
+<h1>Skill lab assignment 2</h1>
+  
+<div class="container">
+<form name ="cal">
+<input type="text" name ="display">
+<br><br>
+
+  <input type="button" value="7" onclick="cal.display.value+='7'">
+  
+  <input type="button" value="8" onclick ="cal.display.value+='8'">
+  
+  <input type="button" value="9" onclick="cal.display.value+='9'">
+  
+  <input type="button" value="+" onclick="cal.display.value+='+'">
+  <br><br>
+  
+  <input type="button" value="4" onclick="cal.display.value+='4'">
+  
+  <input type="button" value="5" onclick="cal.display.value+='5'">
+  
+  <input type="button" value="6" onclick="cal.display.value+='6'">
+  
+  <input type="button" value="-" onclick="cal.display.value+='-'">
+  <br><br>
+  
+  <input type="button" value="1" onclick="cal.display.value+='1'">
+  
+  <input type="button" value="2" onclick="cal.display.value+='2'">
+  
+  <input type="button" value="3" onclick="cal.display.value+='3'">
+  
+  <input type="button" value="*" onclick="cal.display.value+='*'">
+  <br><br>
+  
+  <input type="button" value="0" onclick="cal.display.value+='0'">
+  
+  <input type="button" value="/" onclick="cal.display.value+='/'">
+  
+  <input type="button" value="%" onclick="cal.display.value+='%'">
+  
+  <input type="button" value="=" onclick="cal.display.value =eval(cal.display.value)">
+  <br><br>
+  
+  <input type="button" value="DELETE" onclick="cal.display.value=''" id="del">
+  
+  <input type="button" value="✓" onclick="sq()">
+  
+  <input type="button" value="." onclick="cal.display.value+='.'">
+  </form>
+  </div>
+  
+</body>
+</html>
